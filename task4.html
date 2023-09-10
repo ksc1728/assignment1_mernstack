@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: none;
+            border-collapse: collapse;
+            font-family:'Times New Roman', Times, serif;
+        }
+        th, td {
+            padding-top: 0px;
+            padding-bottom: 8px;
+            padding-left: 0px;
+            padding-right: 100px;
+            border-spacing: 20px;
+        }
+        tr:last-child{
+            text-align: left;
+            padding:10px;
+            font-size: 12px;
+        }
+        #savebutton{
+            padding:4px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="On submit" method="post">
+        <table >
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" id="Full Name"></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" id="Username"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="Password"></td>
+            </tr>
+            <tr>
+                <td>Re Password:</td>
+                <td><input type="password" id="Re Password"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" id="Address" ></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text" id="Age"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><select id="gender-btn" name="gender" value="gender">
+                    <option selected>Male</option>
+                    <option>Female</option>
+                    <option>Other</option></select></td>
+            </tr>
+            <tr >
+                <th rowspan="2"><input type="submit" value="Save" name="Save" id="savebutton"></th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

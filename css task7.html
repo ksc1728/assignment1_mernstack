@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .outer-box {
+            background-color: rgba(122, 6, 49, 0.763);
+            box-sizing: border-box;
+        }
+
+        .inner-box {
+            background-color: rgba(79, 4, 32, 0.763);
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom:10px;
+            width:500px;
+            height:470px;
+            text-align:left;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        table {
+            margin-top: 20px;
+            margin-left: 60px;
+            margin-right: 40px;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        #register {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            color: rgb(70, 69, 69);
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 4px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+        
+        <form>
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td><input type="text" id="name" placeholder="your name"/></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="text" id="email" placeholder="your email"/></td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" id="Password"/></td>
+                </tr>
+                <tr>
+                    <th>Phone Number:</th>
+                    <td><input type="text" id="phno"/></td>
+                </tr>
+                <tr>
+                    <th>Gender:</th>
+                    <td>Male:<input type="radio" id="Gender"> 
+                        Female:<input type="radio" id="Gender">
+                        Other:<input type="radio" id="Gender"></td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td><select style="background:rgb(200, 199, 199)" name="languages" value="language">
+                        <option  selected disabled hidden> Select language</option>
+                        <option>Telugu</option>
+                        <option>Hindi</option>
+                        <option>English</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <th>Zipcode:</th>
+                    <td><input type="text" id="zp"/></td>
+                </tr>
+                <tr>
+                    <th>About:</th>
+                    <td><textarea style="font-size:12px;" name="about" rows="2" cols="22" placeholder="Write about yourself..."></textarea></td>
+                </tr>
+                <tr>
+                    <th style="text-align:right" colspan="2" ><button id="register"><b>Register</b></button></th>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

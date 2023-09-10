@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: 0;
+        }
+
+        .main {
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            height: 400px;
+            width: 600px;
+            display: flex;
+        }
+
+        .sidenav {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            align-items: center; 
+        }
+
+        #Home{
+            color: rgb(18, 154, 74);
+            margin-bottom: 10px;
+            transition: transform 0.3s; 
+            text-decoration: none;
+            margin-left: 0px;
+            transition: 0.3s;
+            text-decoration: none;
+            width: 40px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+        #Java{
+            color: rgb(32, 146, 239);
+            margin-bottom: 10px;
+            transition: transform 0.3s; 
+            text-decoration: none;
+            margin-left: -4px;
+            transition: 0.3s;
+            text-decoration: none;
+            width: 35px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+        #CSS{
+            color: rgb(235, 35, 35);
+            margin-bottom: 10px;
+            transition: transform 0.3s; 
+            text-decoration: none;
+            margin-left: -4px;
+            transition: 0.3s;
+            text-decoration: none;
+            width: 35px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+        #HTML {
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+            color:rgb(34, 30, 30); 
+            text-decoration: none;
+            margin-left: -4px;
+            transition: 0.3s;
+            text-decoration: none;
+            width: 35px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        #Home:hover, #Java:hover, #CSS:hover, #HTML:hover {
+            transform: scale(1.2);
+        }
+
+        #Home {
+            background-color: rgb(18, 154, 74);
+        }
+
+        #Java {
+            background-color: rgb(32, 146, 239);
+        }
+
+        #CSS {
+            background-color: rgb(235, 35, 35);
+        }
+
+        #HTML {
+            background-color: rgb(34, 30, 30);
+        }
+
+        .content {
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="Sidenav" class="sidenav">
+            <a href="#" id="Home">H</a>
+            <a href="#" id="Java">J</a>
+            <a href="#" id="CSS">C</a>
+            <a href="#" id="HTML">H</a>
+        </div>
+
+        <div id="content" style="margin-left:40px;">
+            <h2>Hoverable Sidenav Buttons</h2>
+            <p>Hover over the buttons in the margin-left side navigation to open them.</p>
+        </div>
+    </div>
+</body>
+</html>

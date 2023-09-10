@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Vertical Navbar */
+        .vnavbar1{
+            border:1px solid black;
+            width:220px;
+
+        }
+        .vnavbar {
+            list-style-type: none;
+            margin-left:8px;
+            padding: 0;
+            width: 200px; 
+            background-color: #96D4D4;
+            margin-bottom: 0px;
+        }
+
+        .vnavbar li {
+            display: block;
+        }
+
+        .vnavbar li a {
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+            background-color: #96D4D4;
+        }
+
+        .vnavbar li a.active {
+            background-color: #ea9619;
+            color: white;
+        }
+
+        .vnavbar li a:hover:not(.active) {
+            background-color: #ea9619;
+            color: white;
+        }
+
+        /* Horizontal Navbar */
+        .hnavbar1{
+            border:1px solid black;
+            margin-top: 20px;
+            background:white;
+            width:380px;
+
+        }
+        .hnavbar {
+            margin-top: 10px;
+            margin-bottom:8px;
+            margin-right:0px;
+            margin-left:5px;
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .hnavbar li {
+            float: left;
+        }
+
+        .hnavbar li a {
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border: none;
+            background-color: #cecdcd;
+        }
+
+        .hnavbar li a.active {
+            background-color: #555;
+            color: white;
+        }
+
+        .hnavbar li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        .vl{
+            border-left: 1px solid blue;
+            height: 46px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Vertical navigation bar</h3>
+    <div class="vnavbar1">
+        <!-- Vertical Navbar -->
+        <ul class="vnavbar">
+            <li class="vnavbarlist"><a class="active" href="#home">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </div>
+    
+    <h3>Horizontal navigation bar</h3>
+    <div class="hnavbar1">
+        <!-- Horizontal Navbar -->
+        <ul class="hnavbar">
+            <li class="hnavbarlist"><a style="background-color:#858484;margin-right:0.4px;" class="active" href="#home">Home</a></li>
+            <li><div class="vl"></div></li>
+            <li><a style="margin-right:1px solid blue;" href="#">Java</a></li>
+            <li><div class="vl"></div></li>
+            <li><a style="margin-right:1px solid blue;" href="#">HTML</a></li>
+            <li><div class="vl"></div></li>
+            <li><a style="margin-right:1px solid blue;"href="#">CSS</a></li>
+            <li><div class="vl"></div></li>
+            <li><a style="color:rgb(206, 205, 205);background:rgb(206, 205, 205);" href="#">bootstrap</a></li>
+        </ul>
+    </div>
+</body>
+</html>
